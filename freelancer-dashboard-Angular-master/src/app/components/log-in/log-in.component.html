@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title></title>
+</head>
+
+<body class="d-flex align-items-center">
+  <section class="login-block">
+    <div class="container">
+      <div class="row">
+
+
+        <div class="col-md-4 login-sec">
+          <img src="../../../assets//img/freelancer-logo.svg" alt="" class="logo-fre">
+          <form class="login-form">
+            <div class="form-group">
+              <label for="textusername" class="text-uppercase">Email</label>
+              <input type="email" class="form-control" placeholder="Enter Email" id="textusername" [(ngModel)]="loginForm.Email" name="Email">
+
+            </div>
+            <div class="form-group">
+              <label for="pass" class="text-uppercase">Password</label>
+              <input type="password" class="form-control" placeholder="Enter Password" id="pass" [(ngModel)]="loginForm.Password" name="Password">
+            </div>
+
+
+            <button type="submit" class="btn btn-login float-right mt-3"  (click)="userLogin() ">Login</button>
+
+          </form>
+        </div>
+        <div class="col-md-8 banner-sec">
+          <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+              <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            </ol>
+
+
+          </div>
+
+
+
+
+
+        </div>
+        </div>
+      </div>
+  </section>
+</body>
+
+</html>
